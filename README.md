@@ -1,5 +1,5 @@
 # WebRTC_Native_Examples
-Examples for WebRTC native (C/C++) Development under GTK+ framework
+Examples for WebRTC native (C/C++) Development under GTK+ framework. For detailed explanation on how the examples work, please refer to my <a href="http://johnson04.github.io/" target="_blank">tutorial posts</a>.
 
 ## 1. Video Capture:
 
