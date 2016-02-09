@@ -42,20 +42,18 @@ protected:
 	};
 
 protected:
-	GtkWidget                                           *m_window;
-	GtkWidget                                           *m_canvas;
-	GtkWidget                                           *m_button;
-	rtc::scoped_ptr<uint8_t[]>                          m_image_buffer;
-	int													m_image_buffer_size;
+	GtkWidget* m_window;
+	GtkWidget* m_canvas;
+	GtkWidget* m_button;
+	int        m_image_buffer_size;
 	
-	cricket::VideoCapturer*                             OpenVideoCaptureDevice();
-	
-	cricket::VideoCapturer 								*m_video_capturer;
+	rtc::scoped_ptr<uint8_t[]>     m_image_buffer;
+	cricket::VideoCapturer*        OpenVideoCaptureDevice();
+	cricket::VideoCapturer*        m_video_capturer;
+	rtc::scoped_ptr<VideoRenderer> m_renderer;
 
-	rtc::scoped_ptr<VideoRenderer>                      m_renderer;
-
-	rtc::scoped_refptr<webrtc::VideoSourceInterface>	m_video_source;
-	rtc::scoped_refptr<webrtc::VideoTrackInterface> 	m_video_track;
+	rtc::scoped_refptr<webrtc::VideoSourceInterface> m_video_source;
+	rtc::scoped_refptr<webrtc::VideoTrackInterface>  m_video_track;
 public:
 	MainWnd();
 	~MainWnd();
@@ -71,7 +69,3 @@ public:
 
 	rtc::scoped_refptr<webrtc::PeerConnectionFactoryInterface> pc_factory;
 };
-
-
-
-
