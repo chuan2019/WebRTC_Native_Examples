@@ -4,7 +4,7 @@ Examples for WebRTC native (C/C++) Development under GTK+ framework. For detaile
 ## 1. Video Capture:
 
 #### install instruction:
-<b>step 1:</b> copy the whole directory into <code>/webrtc-checkout/src/webrtc/examples</code>; 
+<b>step 1:</b> download and copy the whole <code>videocapture</code> directory into <code>/webrtc-checkout/src/webrtc/examples</code>; 
             
 <b>step 2:</b> find the script <code>all.gyp</code> under the directory: <code>webrtc-checkout/src/</code>, and add the following line into the <code>'dependencies'</code> list under the "path": <code>'targets':[{'conditions':['include_examples==1',{</code> 
                   
