@@ -68,7 +68,6 @@ bool MainWnd::Create()
 //-----------------------------------------------------------------------------------
 void MainWnd::OnDestroyed(GtkWidget *widget, GdkEvent *event)
 {
-	m_video_source->Stop();
 	m_window = NULL;
 	m_canvas = NULL;
 	m_button = NULL;
